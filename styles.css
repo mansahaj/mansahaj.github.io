@@ -1,0 +1,32 @@
+.gradient-background {
+    background: linear-gradient(300deg, #5dd5cf, #d6eff2);
+    background-size: 180% 180%;
+}
+  
+.btn-info{
+    background-color: #b3ebf1 !important;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline-marker {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #b3ebf1; /* Bootstrap primary color */
+    border-radius: 50%;
+    left: -7.5px;
+    top: 15px;
+    z-index: 5;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
