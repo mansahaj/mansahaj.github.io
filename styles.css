@@ -31,6 +31,6 @@
     margin-bottom: 0;
 }
 
-.card-body:hover{
+.col .card-body:hover{
     color: #5dd5cf;
 }
