@@ -203,3 +203,47 @@ body {
 .hero-image:hover {
     transform: scale(1.02);
 }
+
+/* Contact Section Styles */
+#contact {
+    padding: 5rem 0;  /* Increased padding top/bottom */
+}
+
+#contact .card {
+    border: none;
+    box-shadow: 0 -2px 8px var(--primary-color);
+    padding: 2rem;  /* Added padding inside card */
+}
+
+#contact .form-control {
+    background-color: #2f2f2f;
+    border: 2px solid var(--primary-color);  /* Thicker border */
+    color: white;
+    padding: 1.2rem;  /* Increased padding */
+    font-size: 1.2rem;  /* Larger font */
+    margin-bottom: 1.5rem;  /* More space between fields */
+}
+
+#contact .form-control::placeholder {
+    color: white !important;
+    opacity: 0.7;  /* Make placeholder slightly transparent */
+}
+
+#contact textarea.form-control {
+    min-height: 200px;  /* Taller textarea */
+}
+
+#contact .btn {
+    padding: 1rem 2rem;  /* Larger button */
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#contact h1 {
+    font-size: 3rem;  /* Larger heading */
+    margin-bottom: 2rem;  /* More space below heading */
+}
+
+#contact h1.text-body-emphasis {
+    color: white !important;
+}

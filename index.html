@@ -23,6 +23,7 @@
                   <a class="nav-link active" href="#about">About</a>
                   <a class="nav-link active" href="#projects">Projects</a>
                   <a class="nav-link active" href="#workexp">Experience</a>
+                  <a class="nav-link active" href="#contact">Contact</a>
                 </div>
               </div>
             </div>
@@ -44,7 +45,7 @@
           </div>
     </section>
     <!-- summary -->
-    <section id="about">
+    <section id="about"e 
         <div class="pt-4 text-center">
             <div class="container pt-4">
                 <h1 class="text-body-emphasis white-text mb-4">About Me</h1>
@@ -190,6 +191,32 @@
               </div>
           </div>
             <!-- Repeat for more positions -->
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container-fluid px-5">  <!-- Changed from container to container-fluid with padding -->
+        <h1 class="text-body-emphasis text-center mb-4">Contact Me</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-11">  <!-- Increased from col-md-10 to col-md-11 -->
+                <div class="card">
+                    <div class="card-body">
+                        <form action="https://formspree.io/f/xvgodadq" method="POST">
+                            <div class="mb-3">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
