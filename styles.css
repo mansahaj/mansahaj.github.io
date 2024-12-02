@@ -53,6 +53,10 @@ body {
     padding: 1.5rem;  /* Add more padding inside the card */
 }
 
+#workexp {
+    margin-top: 5rem; /* Adjust the value as needed */
+}
+
 #workexp .card {
     border: 1px solid var(--primary-color);  /* Keep only the border color */
     margin-bottom: 30px;
@@ -278,4 +282,37 @@ body {
 
 #contact h1.text-body-emphasis {
     color: white !important;
+}
+
+.navbar .nav-link {
+    background-color: var(--primary-color) !important;               /* Default background */                          /* Default text color */
+    padding: 7px 10px;                               /* Add padding if needed */
+    transition: background-color 0.3s ease;           /* Smooth transition */
+}
+
+.navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.478) !important; /* Faded background on hover */
+    border-radius:10px;
+}
+
+.footer {
+    margin-top: 4rem;
+    color: black;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.footer .btn-info {
+    margin: 0 0.5rem !important;
+    padding: 0.4rem 0.4rem !important;
+    transform: scale(1);
+}
+
+.footer .btn-info:hover {
+    transform: translateY(-2px) scale(1);
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
 }
