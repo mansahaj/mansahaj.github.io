@@ -53,6 +53,10 @@ body {
     padding: 1.5rem;  /* Add more padding inside the card */
 }
 
+#workexp {
+    margin-top: 5rem; /* Adjust the value as needed */
+}
+
 #workexp .card {
     border: 1px solid var(--primary-color);  /* Keep only the border color */
     margin-bottom: 30px;
@@ -107,8 +111,40 @@ body {
 .timeline {
     position: relative;
     padding-left: 20px;
+    margin: 0;
+    padding: 0;
 }
 
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 30px; /* Adjust to position the line */
+    width: 4px;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 60px; /* Space for the marker */
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-marker {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    z-index: 1; /* Ensure marker is above the line */
+}
 
 .timeline-item {
     margin-bottom: 30px;
@@ -246,4 +282,37 @@ body {
 
 #contact h1.text-body-emphasis {
     color: white !important;
+}
+
+.navbar .nav-link {
+    background-color: var(--primary-color) !important;               /* Default background */                          /* Default text color */
+    padding: 7px 10px;                               /* Add padding if needed */
+    transition: background-color 0.3s ease;           /* Smooth transition */
+}
+
+.navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.478) !important; /* Faded background on hover */
+    border-radius:10px;
+}
+
+.footer {
+    margin-top: 4rem;
+    color: black;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.footer .btn-info {
+    margin: 0 0.5rem !important;
+    padding: 0.4rem 0.4rem !important;
+    transform: scale(1);
+}
+
+.footer .btn-info:hover {
+    transform: translateY(-2px) scale(1);
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
 }
