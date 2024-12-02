@@ -1,10 +1,107 @@
+:root {
+    --primary-color: #00FFFF;  /* Define the color variable */
+}
+
 .gradient-background {
-    background: linear-gradient(300deg, #5dd5cf, #d6eff2);
+    background: linear-gradient(300deg, var(--primary-color), var(--primary-color));
     background-size: 180% 180%;
 }
   
-.btn-info{
-    background-color: #b3ebf1 !important;
+.btn-info {
+    background-color: var(--primary-color) !important; 
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none !important;  /* Remove any border */
+}
+
+.btn-info:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px var(--primary-color) !important;
+    background-color: var(--primary-color) !important;  /* Keep orange on hover */
+}
+
+body {
+    background-color: #1a1a1a !important;  /* Lighter black */
+    color: white;
+}
+
+.card {
+    background-color: #242424 !important;  /* Lighter card background */
+    color: white !important;
+}
+
+#projects .card {
+    box-shadow: 0 -2px 8px var(--primary-color) !important;  /* Adjust shadow to top */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Project cards text */
+#projects .card-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+#projects .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 -4px 12px var(--primary-color) !important;  /* Increase glow on hover */
+}
+
+#projects .card-body h3 {
+    margin-bottom: 1.5rem;  /* Add more space between title and text */
+}
+
+#projects .card-body {
+    padding: 1.5rem;  /* Add more padding inside the card */
+}
+
+#workexp .card {
+    border: 1px solid var(--primary-color);  /* Keep only the border color */
+    margin-bottom: 30px;
+    transition: transform 0.2s;  /* Keep only transform transition */
+}
+
+#workexp .card:hover {
+    transform: translateY(-5px);  /* Keep only the lift effect */
+}
+
+/* Work Experience text */
+#workexp .card-body {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+#workexp ul li {
+    margin-bottom: 0.8rem;
+}
+
+#workexp .card-header {
+    font-size: 1.3rem;
+}
+
+#workexp .text-muted {
+    font-size: 1.1rem;
+    color: #e0e0e0 !important;  /* Change time period text color to light gray */
+}
+
+.card-header {
+    background-color: #2f2f2f !important;  /* Slightly lighter header */
+    color: white !important;
+    border-bottom: 1px solid #333333;
+}
+
+.text-body-emphasis {
+    color: white !important;
+}
+
+.lead {
+    color: white;
+}
+
+.text-muted {
+    color: #b3b3b3 !important;
+}
+
+#projects h1, #workexp h1 {
+    color: white !important;
 }
 
 .timeline {
@@ -12,16 +109,6 @@
     padding-left: 20px;
 }
 
-.timeline-marker {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: #b3ebf1; /* Bootstrap primary color */
-    border-radius: 50%;
-    left: -7.5px;
-    top: 15px;
-    z-index: 5;
-}
 
 .timeline-item {
     margin-bottom: 30px;
@@ -31,6 +118,88 @@
     margin-bottom: 0;
 }
 
-.col .card-body:hover{
-    color: #5dd5cf;
+.col .card-body:hover {
+    color: var(--primary-color) !important;
+}
+
+#about h1.text-body-emphasis {
+    color: white !important;
+}
+
+#about {
+    color: white !important;
+    background-color: #1a1a1a;  /* Match body background */
+}
+
+#about p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#about .lead {
+    color: white;
+    font-size: 1.4rem;  /* Increased from 1.2rem */
+    font-weight: 400;   /* Make text slightly bolder */
+    line-height: 1.8;   /* Improve readability with increased line height */
+}
+
+#about b {
+    font-weight: 600;   /* Make bold text even bolder */
+    font-size: 1.3rem;  /* Make bold text slightly larger */
+}
+
+#about p, #about .lead {
+    font-weight: 600 !important;  /* Make all text in about section bold */
+}
+
+#social {
+    padding: 2rem 0;  /* Increase padding around social section */
+}
+
+#social .btn-info {
+    margin: 0 1.5rem !important;  /* Keep the spacing between buttons */
+    padding: 0.7rem 0.7rem !important;  /* Reduce padding around icons */
+    transform: scale(1.1);  /* Reduce overall scaling from 1.2 to 1.1 */
+}
+
+#social .btn-info img {
+    height: 34px !important;  /* Slightly reduce icon size from 35px to 32px */
+    width: auto;
+}
+
+#social .btn-info:hover {
+    transform: translateY(-3px) scale(1.1);  /* Match the new scale on hover */
+}
+
+.tech-stack {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tech-btn {
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 15px;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: transform 0.2s;
+}
+
+.tech-btn:hover {
+    transform: translateY(-2px);
+}
+
+.hero-image {
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.hero-image:hover {
+    transform: scale(1.02);
 }
