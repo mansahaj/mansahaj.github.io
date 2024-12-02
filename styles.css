@@ -157,13 +157,13 @@ body {
 }
 
 #social .btn-info {
-    margin: 0 1.5rem !important;  /* Keep the spacing between buttons */
-    padding: 0.7rem 0.7rem !important;  /* Reduce padding around icons */
+    margin: 0 1.1rem !important;  /* Keep the spacing between buttons */
+    padding: 0.5rem 0.5rem !important;  /* Reduce padding around icons */
     transform: scale(1.1);  /* Reduce overall scaling from 1.2 to 1.1 */
 }
 
 #social .btn-info img {
-    height: 34px !important;  /* Slightly reduce icon size from 35px to 32px */
+    height: 30px !important;  /* Slightly reduce icon size from 35px to 32px */
     width: auto;
 }
 
